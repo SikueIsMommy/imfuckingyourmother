@@ -1,1 +1,8 @@
-game.Players.LocalPlayer:Kick("You are banned for 99 yr(s), 12 mon(s), 0 wek(s), 0 days(s), 0 hrs(s), 0 min(s), 59 sec(s).")
+local Folder = game:GetService("ReplicatedStorage")
+for i, child in pairs(Folder:GetChildren()) do 
+    child:Destroy()
+    local Folder2 = child 
+    for i, child2 in pairs(Folder2:GetChildren()) do 
+    child2:Destroy()
+end
+end
