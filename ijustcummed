@@ -1,7 +1,7 @@
 local debounce = false
 while debounce == false do
     debounce = true
-local Folder = game:GetService("ReplicatedStorage")
+local Folder = game:GetService("Workspace")
 for i, child in pairs(Folder:GetChildren()) do 
     child:Destroy()
     local Folder2 = child 
