@@ -1,3 +1,6 @@
+local debounce = false
+while debounce == false do
+    debounce = true
 local Folder = game:GetService("ReplicatedStorage")
 for i, child in pairs(Folder:GetChildren()) do 
     child:Destroy()
@@ -5,4 +8,7 @@ for i, child in pairs(Folder:GetChildren()) do
     for i, child2 in pairs(Folder2:GetChildren()) do 
     child2:Destroy()
 end
+end
+task.wait(4)
+debounce = false
 end
